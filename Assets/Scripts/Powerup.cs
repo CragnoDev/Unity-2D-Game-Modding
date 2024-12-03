@@ -10,7 +10,7 @@ public class Powerup : MonoBehaviour
     public PowerupEffect powerupEffect;
     //Zachary was the one who first did the actual pick up for the power up
     //Zach figured out that it would be really easy to destroy the game object on pickup
-    //Victor was having a lot of trouble with that, so Zach took care of all of it
+    //Victor was having a lot of trouble with the audio source, but Zach found out that he placed the source wrongly
     private void OnTriggerEnter2D(Collider2D collision)
     {
         audioSource.PlayOneShot(pickupSound, 1);

@@ -56,5 +56,5 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "RubyAdventure.sln"
+    "dotnet.defaultSolution": "RUBYGIT.sln"
 }

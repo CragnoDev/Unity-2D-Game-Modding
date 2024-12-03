@@ -34,6 +34,7 @@ public InputAction Projectile;
 // Variables related to audio
 public AudioSource audioSource;
 public AudioClip hurtSound;
+public AudioClip throwSound;
 
 
 // Start is called before the first frame update
@@ -129,6 +130,7 @@ Projectile projectile = projectileObject.GetComponent<Projectile>();
 projectile.Launch(moveDirection, 300);
 
 
+audioSource.PlayOneShot(throwSound, 1);
 animator.SetTrigger("Launch");
 }
 
